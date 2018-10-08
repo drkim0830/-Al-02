@@ -223,9 +223,9 @@ int partition(int arr[], int p, int r) {
 int Rand_Partition(int arr[], int p, int r) {
 	int x, i, j;
 
-	/* p~r »çÀÌ¿¡ ÀÖ´Â ¼ö¸¦ index¸¦ pivotÀ¸·Î ¼³Á¤*/
+	/* p~r ì‚¬ì´ì— ìˆëŠ” ìˆ˜ë¥¼ indexë¥¼ pivotìœ¼ë¡œ ì„¤ì •*/
 	int rand_index = Random(p, r);
-	/* ÇØ´ç ÇÏ´Â ¼ö¸¦ r°ú swapÇÔÀ¸·Î½á p~r±îÁö Quick Sort °úÁ¤ÀÌ µ¿ÀÏ*/
+	/* í•´ë‹¹ í•˜ëŠ” ìˆ˜ë¥¼ rê³¼ swapí•¨ìœ¼ë¡œì¨ p~rê¹Œì§€ Quick Sort ê³¼ì •ì´ ë™ì¼*/
 	swap(arr, rand_index, r);
 
 	x = arr[r];
